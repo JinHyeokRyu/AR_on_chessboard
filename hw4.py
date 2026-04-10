@@ -49,9 +49,9 @@ while True:
         # Draw the box on the image
         pts, _ = cv.projectPoints(pyramid, rvec, tvec, K, dist_coeff)
         pts = np.int32(pts).reshape(-1,2)
-        cv.polylines(img, [np.int32(pts[:4])], True, (0, 255, 0), 2)
+        cv.polylines(img, [np.int32(pts[:4])], True, (0, 255, 0), 4)
         for i in range(4):
-            cv.line(img, tuple(pts[i]), tuple(pts[4]), (0, 0, 255), 2)
+            cv.line(img, tuple(pts[i]), tuple(pts[4]), (0, 0, 255), 4)
 
     writer.write(img)
 
