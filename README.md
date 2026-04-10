@@ -15,6 +15,6 @@
 
 | Before | After |
 |--------|-------|
-| ![](test.gif) | ![](test_ar.gif) |
+| ![](./test.gif) | ![](./test_ar.gif) |
 
 여러분들의 object를 다양한 각도에서 확인해보세요!
